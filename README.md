@@ -10,7 +10,7 @@ After installing Tampermonkey, create a new script and add the below code:
 !['plugin'](img/plugin.png?raw=true)
 
 ```javascript
-/ ==UserScript==
+// ==UserScript==
 // @name         Discord Token
 // @namespace    http://tampermonkey.net/
 // @version      0.0.1
