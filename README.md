@@ -2,10 +2,10 @@
 
 > Delete all messages in Discord channels or DM
 
-In order to delete messages in bulk, you need tha discord authedication token. That's why this script only works with the **web version** of Discord. 
+In order to delete messages in bulk, you need the discord authedication token. That's why this script only works with the **web version** of Discord. 
 
 The authedication token can be obtained with [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo), which is a browser plugin.
-After installing Tampermonkey, create a new script:
+After installing Tampermonkey, create a new script and add the below code:
 
 !['plugin'](img/plugin.png?raw=true)
 
@@ -33,6 +33,14 @@ When this is enabled, it will log your authentication token in the console befor
 !['token'](img/token.png?raw=true)
 
 Now open Developer Tools (Ctr+Shift+I) and copy-paste delete-all-messages.js code into the console, after replacing the 'AUTH-TOKEN' and 'LAST_MESSAGE_ID'.
+_You can find user id, message id, channel id and server id by enabling discord developer mode (settings/appearance) and right clicking the user's avatar , the message, the channel or the server._
+
+```javascript
+var before = 'LAST_MESSAGE_ID';
+clearMessages = function() {
+    const authToken = 'AUTH_TOKEN';
+    ...
+```
 
 ## License
 
