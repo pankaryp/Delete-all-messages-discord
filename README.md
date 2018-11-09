@@ -33,7 +33,8 @@ When this is enabled, it will log your authentication token in the console befor
 !['token'](img/token.png?raw=true)
 
 Now open Developer Tools (Ctr+Shift+I) and copy-paste delete-all-messages.js code into the console, after replacing the 'AUTH-TOKEN' and 'LAST_MESSAGE_ID'.
-_You can find user id, message id, channel id and server id by enabling discord developer mode (settings/appearance) and right clicking the user's avatar , the message, the channel or the server._
+
+_NOTE:You can find user id, message id, channel id and server id by enabling discord developer mode (settings/appearance) and right clicking the user's avatar , the message, the channel or the server._
 
 ```javascript
 var before = 'LAST_MESSAGE_ID';
