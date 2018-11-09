@@ -1,6 +1,6 @@
 var before = 'LAST_MESSAGE_ID';
 clearMessages = function(){
-	const authToken = "";
+	const authToken = 'AUTH_TOKEN';
 	const channel = window.location.href.split('/').pop();
 	const baseURL = `https://discordapp.com/api/channels/${channel}/messages`;
 	const headers = {"Authorization": authToken };
