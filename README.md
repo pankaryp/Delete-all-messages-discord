@@ -1,6 +1,8 @@
 # Delete-all-messages-discord
 
-> Delete all messages in Discord channels or DMs
+![status completed](https://img.shields.io/badge/status-completed-brightgreen.svg?style=flat-square)
+
+> ✂️ Delete all messages in Discord channels or DMs
 
 In order to delete messages in bulk, you need the discord authedication token. That's why this script only works with the **web version** of Discord. 
 
